@@ -1,8 +1,4 @@
 @import '../../assets/normalize/variables.scss';
-<<<<<<< HEAD
-
-=======
->>>>>>> 0fbe082b4eb37513d96fa1adb63eb3f89c74d3e3
 .background__schoole{
     background-color: $norm;
     width: 100%;
@@ -16,7 +12,6 @@
         font-size: 50px;
         position: relative;
         transition: ease-in;
-<<<<<<< HEAD
         font-weight: bold;
         letter-spacing: 4px;
         &>span:nth-child(2)
@@ -76,14 +71,6 @@
         color: $norm2;
         padding: 8px 50px;
         margin-top: 20px;
-=======
-    }
-    .btn-next{
-        border: 2px solid $norm2;
-        border-radius: 6px;
-        color: $norm2;
-        margin-top: 10px;
->>>>>>> 0fbe082b4eb37513d96fa1adb63eb3f89c74d3e3
         transition: 0.3s;
         font-size: 20px;
         
@@ -93,21 +80,6 @@
             color: #fff;
         }
     }
-<<<<<<< HEAD
-=======
-    .btn-back{
-        border: 1px solid $norm3;
-        border-radius: 4px;
-        color: $norm3;
-        margin-top: 10px;
-        transition: 0.3s;
-        font-size: 20px;
-        &:hover{
-            background-color: $norm3;
-            color: #fff;
-        }
-    } 
->>>>>>> 0fbe082b4eb37513d96fa1adb63eb3f89c74d3e3
 }
 
 @keyframes goBottom {
