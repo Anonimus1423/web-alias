@@ -1,20 +1,8 @@
 @import '../../assets/normalize/variables.scss';
-@keyframes topAnimate{
-    0%{
-        top: -400px;
-    }
-    100%{
-        top: 0px;
-    }
-}
-@keyframes showedAnimate{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+<<<<<<< HEAD
+
+=======
+>>>>>>> 0fbe082b4eb37513d96fa1adb63eb3f89c74d3e3
 .background__schoole{
     background-color: $norm;
     width: 100%;
@@ -25,33 +13,118 @@
     justify-content: center;
     align-items: center;
     &__title{
-        font-size: 24px;
+        font-size: 50px;
         position: relative;
         transition: ease-in;
-        animation: topAnimate 0.6s linear;
+<<<<<<< HEAD
+        font-weight: bold;
+        letter-spacing: 4px;
+        &>span:nth-child(2)
+        {
+            animation-delay: 0.20s;
+        }  
+        &>span:nth-child(3)
+        {
+            animation-delay: 0.40s;
+        }  
+        &>span:nth-child(4)
+        {
+            animation-delay: 0.60s;
+        }  
+        &>span:nth-child(5)
+        {
+            animation-delay: 0.80s;
+        }  
+        &>span:nth-child(6)
+        {
+            animation-delay: 1s;
+        }  
+        &>span
+        {
+            transform: scaleY(1) translateY(-200px);
+            display: inline-block;
+            animation: goBottom 1s linear forwards;
+        } 
+    }
+    #loading-bar-spinner.spinner {
+        left: 50%;
+        margin-left: -20px;
+        top: 50%;
+        margin-top: -20px;
+        position: absolute;
+        z-index: 19 !important;
+        animation: loading-bar-spinner 400ms linear infinite;
+    }
+    
+    #loading-bar-spinner.spinner .spinner-icon {
+        width: 40px;
+        height: 40px;
+        border:  solid 4px transparent;
+        border-top-color:  $norm2 !important;
+        border-left-color: $norm2 !important;
+        border-radius: 50%;
+    }
+    
+    @keyframes loading-bar-spinner {
+      0%   { transform: rotate(0deg);   transform: rotate(0deg); }
+      100% { transform: rotate(360deg); transform: rotate(360deg); }
+    }
+    
+    .btn-next, .btn-back {
+        border: 1px solid $norm2;
+        border-radius: 6px;
+        color: $norm2;
+        padding: 8px 50px;
+        margin-top: 20px;
+=======
     }
     .btn-next{
-        border: 1px solid #EA5455;
-        border-radius: 4px;
-        color: #EA5455;
+        border: 2px solid $norm2;
+        border-radius: 6px;
+        color: $norm2;
         margin-top: 10px;
+>>>>>>> 0fbe082b4eb37513d96fa1adb63eb3f89c74d3e3
         transition: 0.3s;
         font-size: 20px;
+        
+        padding: 8px 50px;
         &:hover{
-            background-color: #EA5455;
+            background-color: $norm2;
             color: #fff;
         }
     }
+<<<<<<< HEAD
+=======
     .btn-back{
-        border: 1px solid #F07B3F;
+        border: 1px solid $norm3;
         border-radius: 4px;
-        color: #F07B3F;
+        color: $norm3;
         margin-top: 10px;
         transition: 0.3s;
         font-size: 20px;
         &:hover{
-            background-color: #F07B3F;
+            background-color: $norm3;
             color: #fff;
         }
     } 
+>>>>>>> 0fbe082b4eb37513d96fa1adb63eb3f89c74d3e3
+}
+
+@keyframes goBottom {
+    0%
+    {
+        transform: scaleY(1) translateY(-200px);
+    }
+    70%
+    {
+        transform: scaleY(1.35) translateY(0px);
+    }
+    80%
+    {
+        transform: scaleY(0.8) translateY(0px) translateY(10%);
+    }
+    100%
+    {
+        transform: scaleY(1) translateY(0px);
+    }
 }
